@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+.container {
+  position: relative;
+  background-color: #033158;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23033158' cx='50' cy='0' r='50'/%3E%3Cg fill='%23023860' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23004069' cx='50' cy='100' r='50'/%3E%3Cg fill='%23004771' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23004f7a' cx='50' cy='200' r='50'/%3E%3Cg fill='%23005782' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23005f8a' cx='50' cy='300' r='50'/%3E%3Cg fill='%23006793' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23006f9b' cx='50' cy='400' r='50'/%3E%3Cg fill='%230077a3' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%230080aa' cx='50' cy='500' r='50'/%3E%3Cg fill='%230088b2' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%230091b9' cx='50' cy='600' r='50'/%3E%3Cg fill='%230099c1' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300a2c8' cx='50' cy='700' r='50'/%3E%3Cg fill='%2300abcf' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300b4d5' cx='50' cy='800' r='50'/%3E%3Cg fill='%2300bddc' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%2300c6e2' cx='50' cy='900' r='50'/%3E%3Cg fill='%2300cfe8' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%2306D8EE' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  font-family: sans-serif;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chatScreen {
+  width: 90vh;
+  height: 70vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 3px 10px;
+  clip-path: circle(5% at 5% 6%);
+  transition: all 0.6s ease-in-out;
+}
+
+.chatScreen:hover {
+  clip-path: circle(75%);
+  border-top: 4px solid aqua;
+  border-radius: 6px 6px 10px 10px;
+  background-color: #003158;
+  background-image: url("https://www.transparenttextures.com/patterns/football-no-lines.png");
+}
+.chatbot {
+  transition: color 0.6s;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  left: 10px;
+  top: 8px;
+}
+
+img {
+  width: 6vh;
+  height: 6vh;
+}
+@media screen and (min-width: 100px) and (max-width: 675px) {
+  .img {
+    width: 3vh;
+    height: 3vh;
+  }
+
+  .chatScreen {
+    clip-path: circle(7% at 9% 6%);
+    width: 50vh;
+  }
+}
